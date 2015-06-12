@@ -1,0 +1,23 @@
+- This is live as well its not just code you can check out example below 
+http://54.152.14.68:8080/words/findphones/{"text":"zaid phone 4153072659 home 315-363-5926 office (212) 553 6810"}
+
+- endpoints loolike the fllowing
+	'/words/findphones/(.*)', 'find_phones',
+        '/words/avgwordlen/(.*)', 'find_word_len',
+        '/sentences/avglen/(.*)', 'find_sent_len',
+        '/words/mostfreqi/(.*)', 'find_most_freq',
+        '/words/findmedian/(.*)', 'find_median_word'
+
+
+NOTES:
+didnt really get that much time to work on this since tuesday so wanted to point a few things out
+
+1- I figured we discussed how we would do this on the low leveli using hashes and regex when we talked so I used a powerful language processing tool to handle the work espcially for the tokanization part check out http://www.nltk.org/
+
+2- the format you post the json is in the URL i realize this isnt the best approach but that was done for the sake of speed
+
+3- I wanted to add some tests to this or even start it from scrach using TDD, again time was a factor. 
+
+4- Was going to attempt to do it using elasticsearch but figuring out the tokenizers would have been a bit time consuming (mainly things like tokenizing a sentence or aggregations) I will be trying that on my own so if you want email me and I'll give you some new end points that use ES as the backbone.
+
+this is running on ubuntu aws micro instance that i created for this purpose, please let me know when you're done checking this out so i can terminate it (i miss getting free service but I'm far past that now)
