@@ -12,7 +12,7 @@ http://54.152.14.68:8080/words/findphones/{"text":"zaid phone 4153072659 home 31
 NOTES:
 didnt really get that much time to work on this since tuesday so wanted to point a few things out
 
-1- I figured we discussed how we would do this on the low leveli using hashes and regex when we talked so I used a powerful language processing tool to handle the work espcially for the tokanization part check out http://www.nltk.org/
+1- I figured we discussed how we would do this on the low level using hashes and regex when we talked  on tuesday so I used a powerful language processing tool to handle the work espcially for the tokanization part check out http://www.nltk.org/
 
 2- the format you post the json is in the URL i realize this isnt the best approach but that was done for the sake of speed
 
