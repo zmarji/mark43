@@ -1,12 +1,9 @@
 #!/usr/bin/python
 from __future__ import division
 import web, re, json, numpy
-import xml.etree.ElementTree as ET
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.probability import FreqDist  
 
-tree = ET.parse('user_data.xml')
-root = tree.getroot()
 
 urls = (
 	
