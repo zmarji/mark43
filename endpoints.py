@@ -31,6 +31,7 @@ class find_median_word:
 class find_most_freq:
 	def GET(self, jsoninput):
 		wordlist = word_tokenize(jsoninput)
+		wordlist = filter(lambda a: a != '.' and a != ','  and a != '?' and a !='!', wordlist)
 		fd = FreqDist(wordlist)
 		mostcom = fd.most_common(10)
 		return jsonify('mostfreq', mostcom)
